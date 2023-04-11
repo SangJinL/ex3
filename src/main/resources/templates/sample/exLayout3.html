@@ -1,4 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <th:block
+    <th:block th:replace="~{/fragments/fragment3::
+        target(~{this:: #ul_first}, ~{this:: #ul_second})}">
+        <ul id="ul_first">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+        <ul id="ul_second">
+            <li>D</li>
+            <li>F</li>
+            <li>G</li>
+        </ul>
+    </th:block>
 </html>
