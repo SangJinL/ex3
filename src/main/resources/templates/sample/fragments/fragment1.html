@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+   <div th:fragment="line1"> <!-- 하나당 1개의 조각-->
+        <h2>Line 1</h2>
+    </div>
+    <div th:fragment="line2">
+        <h2>Line 2</h2>
+    </div>
+    <div th:fragment="line3">
+        <h2>Line 3</h2>
+    </div>
 </body>
 </html>

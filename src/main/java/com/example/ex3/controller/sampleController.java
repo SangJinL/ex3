@@ -54,4 +54,9 @@ public class sampleController {
     public void ex3(){
         log.info("ex3() 호출됨");
     }
+
+    @GetMapping("/exLayout")
+    public void exLayout(){
+            log.info("exLayout() 호출됨");
+        }
 }
