@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .c1{
-            background-color: red;
-        }
-        .c2{
-            background-color: aqua;
-        }
-    </style>
 </head>
 <body>
     <h1>exLayout3 연습(main)</h1>
     <div th:fragment="target(first, second)" >
+        <style>
+            .c1{
+                background-color: red;
+            }
+            .c2{
+                background-color: aqua;
+            }
+        </style>
         <div class="c1">
             <th:block th:replace="${first}"></th:block>
         </div>
