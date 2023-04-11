@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>전체 파일의 내용을 include하는 방법</h1>
+    <div style="border: 1px solid burlywood">
+        <th:block th:replace="~{/fragments/fragment2}"></th:block>
+    </div>
+    <h1>Layout 2</h1>
+    <!--    파일명만 확장자 x-->
+    <div th:replace="~{/fragments/fragment1 :: line1}"></div>
+    <h1>Layout 2</h1>
+    <div th:insert="~{/fragments/fragment1 :: line2}"></div>
+    <h1>Layout 3</h1>
+    <th:block th:replace="~{/fragments/fragment1 :: line3}"></th:block>
+</body>
+</html>

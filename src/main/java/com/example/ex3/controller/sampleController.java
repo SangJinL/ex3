@@ -59,4 +59,13 @@ public class sampleController {
     public void exLayout(){
             log.info("exLayout() 호출됨");
         }
+
+    @GetMapping("/exLayout2")
+    public void exLayout2(){
+        log.info("exLayout2() 호출됨");
+    }
+    @GetMapping("/exLayout3")
+    public void exLayout3(){
+        log.info("exLayout3() 호출됨");
+    }
 }
